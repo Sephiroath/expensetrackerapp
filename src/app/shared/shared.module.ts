@@ -2,7 +2,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule  } from '@angular/forms';
-// import { MdButtonModule } from '@angular/material';
+
+import { MatToolbarModule } from '@angular/material';
 
 /* our own custom components */
 
@@ -13,7 +14,7 @@ import { FormsModule  } from '@angular/forms';
     FormsModule,
 
     /* 3rd party components */
-    // MdButtonModule,
+    MatToolbarModule,
   ],
   declarations: [
   ],
@@ -23,7 +24,7 @@ import { FormsModule  } from '@angular/forms';
     FormsModule,
 
     /* 3rd party components */
-    // MdButtonModule,
+    MatToolbarModule,
 
     /* our own custom components */
     // SomeCustomComponent
