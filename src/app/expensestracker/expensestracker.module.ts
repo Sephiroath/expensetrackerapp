@@ -6,7 +6,9 @@ import { SharedModule } from '@app/shared';
 
 import { ExpensestrackerRoutingModule } from './expensestracker-routing.module';
 import { ExpensestrackerComponent } from './expensestracker/expensestracker.component';
-import { ExpenseComponent } from './expense/expense.component';
+import { DebtsComponent } from './debts/debts.component';
+import { FrecuenciesComponent } from './frecuencies/frecuencies.component';
+import { FrecuenciesService } from '@app/expensestracker/frecuencies/frecuencies.service';
 
 @NgModule({
   imports: [
@@ -16,6 +18,7 @@ import { ExpenseComponent } from './expense/expense.component';
     }),
     EffectsModule.forFeature([])
   ],
-  declarations: [ExpensestrackerComponent, ExpenseComponent]
+  declarations: [ExpensestrackerComponent, DebtsComponent, FrecuenciesComponent],
+  providers: [FrecuenciesService]
 })
 export class ExpensestrackerModule { }
